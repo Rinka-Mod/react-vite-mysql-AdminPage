@@ -20,7 +20,7 @@ app.get("/api/products", async (req, res) => {
 app.post("/api/products", async (req, res) => {
   const { name, price, quantity, image_url } = req.body;
   try {
-    // Lưu ý: Thứ tự các biến phải khớp với câu lệnh SQL
+    
     await db.execute(
       "INSERT INTO products (name, price, quantity, image_url) VALUES (?, ?, ?, ?)",
       [name, price, quantity || 0, image_url || ""]
