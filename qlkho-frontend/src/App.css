@@ -1,0 +1,39 @@
+:root {
+  --primary: #2c3e50;
+  --blue: #3498db;
+}
+
+body { margin: 0; font-family: sans-serif; background: #f4f7f6; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Đẩy Logo sang trái, Links sang phải */
+  align-items: center;
+  padding: 0 50px;
+  height: 70px;
+  background: var(--primary);
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #bdc3c7;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.admin-btn {
+  background: var(--blue);
+  color: white !important;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.content { max-width: 1200px; margin: 20px auto; padding: 20px; }
